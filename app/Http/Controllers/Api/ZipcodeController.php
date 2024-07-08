@@ -19,7 +19,10 @@ class ZipcodeController extends Controller
         return new ZipcodeResource($zipcode);
     }
 
+    /* Function to insert on DB the zipcode information. 
+         Recives data from FORM.  */
     public function store(Request $request){
+        //basic validation
         $request->validate([
                 'zipcode'=>'required|max:5|min:5'
             ],[
@@ -28,6 +31,7 @@ class ZipcodeController extends Controller
                 'zipcode.min'=>'Please enter a 5 digit zipcode'
             ]
         );
+        //insert zipcode on DB
         $zipcode = Zipcode::create($request->all());
         return response()->json(new ZipcodeResource($zipcode),Response::HTTP_CREATED); // Http 201   
     }

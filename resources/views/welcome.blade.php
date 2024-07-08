@@ -28,6 +28,7 @@
         </style>
     </head>
     <body>
+        <!-- Nav Icons -->
         <nav class="py-0 secoondary-color " >
             <div class="container d-flex flex-wrap justify-content-end " >
                 <ul class="nav ">
@@ -52,6 +53,7 @@
                 </ul>
             </div>
         </nav>
+        <!-- HealthBird Logo header -->
         <header class="py-3">
             <div class="container d-flex flex-wrap justify-content-start">
                 <img class="fs-4" src="/img/LogoHB_Spelled.png">
@@ -65,10 +67,11 @@
                     <img class="fs-4 croped-img " src="/img/Splash-01-FULL.png" >
                 </div>
 
-                <!-- col 2 - Form area  -->
+                <!-- col 2 - Text/Form area  -->
                 <div class="col-md-6 col-sm-4 col-xs-4 " >
                     <div class="row flex-column min-vh-100" > 
                         <div class="col p-0 text-start" >
+                            <!-- Text -->
                             <div class="row pt-5 mt-4" >
                                 <div class="col-sm-5" >
                                     <span class="font-secondary display-6 font-weight-750 ">
@@ -85,10 +88,10 @@
                                     </span>
                                 </div>
                             </div>
-
+                            <!-- Form -->
                             <div class="row pt-5" >
                                 <div class="col-md-auto" >
-                                    <!-- Form -->
+                                    
                                     <form id="formZipcode">
                                         @csrf
                                         <div class="form-group row m-0" >
